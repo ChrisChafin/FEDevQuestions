@@ -137,12 +137,10 @@ var menuItems = [
 ((arr) => {
   let results = [];
   arr.map((i) =>{
-    let name = i.name;
-    let extras = i.extras;
-    if (extras){
-      results.push(name + " (" + extras + ")");
+    if (i.extras){
+      results.push(i.name + " (" + i.extras + ")");
     } else {
-      results.push(name)
+      results.push(i.name)
     }
   })
   return results  
